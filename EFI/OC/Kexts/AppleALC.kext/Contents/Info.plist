@@ -5557,19 +5557,15 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>leeoem - Realtek ALC289 for alienware m17r2</string>
+					<string>Realtek ALC289 for Dell XPS 9500</string>
 					<key>CodecID</key>
 					<integer>283902601</integer>
 					<key>ConfigData</key>
 					<data>
-					ASccIAEnHQEBJx6mAScfkAE3HPABNx0AATce
-					AAE3H0ABRxxAAUcdAQFHHhcBRx+QAUcMAgFn
-					HPABZx0AAWceAAFnH0ABdxzwAXcdAAF3HgAB
-					dx9AAYcc8AGHHQABhx4AAYcfQAGXHHABlx0Q
-					AZceiwGXHwIBpxzwAacdAAGnHgABpx9AAbcc
-					8AG3HQABtx4AAbcfQAHXHPAB1x0AAdceAAHX
-					H0AB5xzwAecdAAHnHgAB5x9AAhccMAIXHRAC
-					Fx4rAhcfAgIXDAI=
+					ATccAAE3HQABNx4QATcfQAFHHBABRx0BAUce
+					FwFHH5ABRwwCAhccIAIXHRACFx4hAhcfAwIX
+					DAIBJxwwAScdAQEnHqABJx+XAdccbQHXHZsB
+					1x5pAdcfQA==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -5577,7 +5573,7 @@
 					<integer>11</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AUcMAgG3DAICFwwC
+					ATcMAAFHDAICFwwCAScMAAHXDAA=
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
