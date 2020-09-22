@@ -33,7 +33,7 @@ This is an OpenCore EFI that allows you to install and boot macOS X Catalina on 
 |Ethernet on Dell dock|Working - via driver download|
 |Other peripherals on Dell dock|Working|
 |Built-in webcam|Working|
-|Sleep|Partial - S1 only (Sleep wake failure in EFI. Need to enable "block sleep" in BIOS)|
+|Sleep|Dell BIOS bug (Enable "block sleep" in BIOS to disable S3 for now)|
 
 ---
 
@@ -77,6 +77,20 @@ exit
 Restart your laptop and boot into the BIOS. Do a factory reset. Now your CFG lock will be disabled. You can confirm that by running the VerifyMSR2 option.
 
 If you update your BIOS, you may need to do this again but so far Dell has been kind to us.
+
+---
+
+## S3 sleep issue with XPS 9500 and other "modern" laptops
+
+Thanks to Microsoft, we are losing the ability to really put our laptops / desktop to sleep. In their infinite wisdom, they decided that we need our laptops and desktops to be "instant on" because we need to receive notifications such as emails and phone calls (hey Satya, heard of a smartphone?)
+
+Manufacturers such as Dell and Lenovo have very stupidly followed Microsoft's advise, by gradually removing S3 sleep mode, breaking compatibility with other OSes such as Linux and Mac OS.
+
+The bigger issue here is that "modern standby" just does not work on Windows itself. The laptop never sleeps if you have background apps running - these days, they *always* receive notifications/messages. We'll need to close the apps to prevent this and if you do, you might as well shutdown. Care to address the white elephant, Satya (not blessed with high IQ but this is common sense, surely)? We close the lid because we don't want to be disturbed. If it's urgent, perhaps pick up the phone? `¯\_(ツ)_/¯`
+
+TL;DR Sleep is broken for Dell XPS 9500 on Windows too. We can still opt-in to use S3 on Windows but Dell has chosen not to implement (or very incompetent at implementing) a working version of S3 resume in their BIOS for XPS 9500. When you resume, you'll get the same behavior as Catalina - Dell logo that never goes away until you hard reset.
+
+Lesson? Buy an Asus instead. Or better yet, just get a Mac. Vote with your wallet. Avoid Dell and Microsoft.
 
 ---
 
