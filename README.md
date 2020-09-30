@@ -2,7 +2,7 @@
 
 This is an OpenCore EFI that allows you to install and boot macOS X Catalina on your Dell XPS 15 9500 (2020).
 
-<b>OpenCore Version:</b> 0.6.0
+<b>OpenCore Version:</b> 0.6.1
 
 <b>macOS Version:</b> Catalina 10.15.6 (19G2021)
 
@@ -27,10 +27,10 @@ This is an OpenCore EFI that allows you to install and boot macOS X Catalina on 
 |Fingerprint Sensor|Not working|
 |SD Card Slot|Not working|
 |Screen brightness|Partial - slider working but no hotkeys|
-|Built-in Wifi|Working via HeliPort|
+|Built-in Wifi|Working|
 |Built-in Bluetooth|Working|
 |Dell USB3.1 dock|Working|
-|Ethernet on Dell dock|Working - via driver download|
+|RTL8153 USB Ethernet on Dell dock|Working|
 |Other peripherals on Dell dock|Working|
 |Built-in webcam|Working|
 |Sleep|Dell BIOS bug (Enable "block sleep" in BIOS to disable S3 for now)|
@@ -101,3 +101,9 @@ Layout 11 for ALC289 is a bit different to ours unfortunately. The XPS 9500 has 
 It is likely that we need to create our own ALC289 layout. If anyone can work out how to follow the instructions here (https://github.com/F0x1c/AppleALC_Instructions) to create a custom AppleALC layout for our codec, please let me know here where I have also posted the codec dump for the ALC289 specific to our laptop - https://www.insanelymac.com/forum/topic/311293-applealc-%E2%80%94-dynamic-applehda-patching/?page=205&tab=comments#comment-2737928.
 
 The headphones jack on the Dell dock is working fine however, as it uses an external USB audio.
+
+---
+
+## Undervolting
+
+This EFI comes preinstalled with VoltageShift kext. To undervolt, visit https://github.com/sicreative/VoltageShift (skip the kext loading part).
