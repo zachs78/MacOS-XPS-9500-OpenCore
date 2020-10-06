@@ -2,7 +2,7 @@
 
 This is an OpenCore EFI that allows you to install and boot macOS X Catalina on your Dell XPS 15 9500 (2020).
 
-<b>OpenCore Version:</b> 0.6.1
+<b>OpenCore Version:</b> 0.6.2
 
 <b>macOS Version:</b> Catalina 10.15.6 (19G2021)
 
