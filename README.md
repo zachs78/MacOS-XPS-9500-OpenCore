@@ -26,7 +26,7 @@ This is an OpenCore EFI that allows you to install and boot macOS X Catalina on 
 |USB 2.0|Working|
 |Fingerprint Sensor|Not working|
 |SD Card Slot|Not working|
-|Screen brightness|Partial - slider working but no hotkeys|
+|Screen brightness|Working, hotkeys fn+S/fn+B to decrease/increase brightness|
 |Built-in Wifi|Working|
 |Built-in Bluetooth|Working|
 |Dell USB3.1 dock|Working|
@@ -101,6 +101,12 @@ Layout 11 for ALC289 is a bit different to ours unfortunately. The XPS 9500 has 
 It is likely that we need to create our own ALC289 layout. If anyone can work out how to follow the instructions here (https://github.com/F0x1c/AppleALC_Instructions) to create a custom AppleALC layout for our codec, please let me know here where I have also posted the codec dump for the ALC289 specific to our laptop - https://www.insanelymac.com/forum/topic/311293-applealc-%E2%80%94-dynamic-applehda-patching/?page=205&tab=comments#comment-2737928.
 
 The headphones jack on the Dell dock is working fine however, as it uses an external USB audio.
+
+---
+
+## Brightness hotkeys
+
+The BRT6 patch used by previous Dell XPS models isn't working on the XPS 9500. However, fn+S and fn+B hotkeys are functioning in place of the original fn+F6 and fn+F7.
 
 ---
 
