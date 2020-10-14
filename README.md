@@ -18,14 +18,14 @@ This is an OpenCore EFI that allows you to install and boot macOS X Catalina on 
 |CPU Power Management|Working - idles at 800MHz, boosts to max Turbo frequency|
 |Laptop Keyboard|Working|
 |Laptop Trackpad|Working|
-|Laptop Headphones Jack|Not working - distorted sound|
-|Built-in Speakers|Working - missing subwoofer|
+|Laptop Headphones Jack|Working|
+|Built-in Speakers|Working|
 |Built-in Mic|Working|
 |Hotkeys for audio|Working|
 |USB 3.x|Working|
 |USB 2.0|Working|
 |Fingerprint Sensor|Not working|
-|SD Card Slot|Not working|
+|SD Card Slot|Working|
 |Screen brightness|Working, hotkeys fn+S/fn+B to decrease/increase brightness|
 |Built-in Wifi|Working|
 |Built-in Bluetooth|Working|
@@ -91,16 +91,6 @@ The bigger issue here is that "modern standby" just does not work on Windows its
 TL;DR Sleep is broken for Dell XPS 9500 on Windows too. We can still opt-in to use S3 on Windows but Dell has chosen not to implement (or very incompetent at implementing) a working version of S3 resume in their BIOS for XPS 9500. When you resume, you'll get the same behavior as Catalina - Dell logo that never goes away until you hard reset.
 
 Lesson? Buy an Asus instead. Or better yet, just get a Mac. Vote with your wallet. Avoid Dell and Microsoft.
-
----
-
-## Built-in speaker / headphones jack issue
-
-Layout 11 for ALC289 is a bit different to ours unfortunately. The XPS 9500 has a subwoofer pin config that gets wired to physical subwoofers in the laptop. This config isn't available on any other laptops. The headphones jack on the right side of the laptop isn't working properly either (distorted sound).
-
-It is likely that we need to create our own ALC289 layout. If anyone can work out how to follow the instructions here (https://github.com/F0x1c/AppleALC_Instructions) to create a custom AppleALC layout for our codec, please let me know here where I have also posted the codec dump for the ALC289 specific to our laptop - https://www.insanelymac.com/forum/topic/311293-applealc-%E2%80%94-dynamic-applehda-patching/?page=205&tab=comments#comment-2737928.
-
-The headphones jack on the Dell dock is working fine however, as it uses an external USB audio.
 
 ---
 
